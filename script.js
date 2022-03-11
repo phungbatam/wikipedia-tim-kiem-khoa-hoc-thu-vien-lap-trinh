@@ -4,7 +4,7 @@ window.onload = function() {
 
 function ajax(keyword) { //AJAX request
     $.ajax({
-        url: "https://vi.wikipedia.org/w/api.php?action=query&list=search&srsearch=" + keyword + "&prop=info&inprop=url&utf8=&format=json",
+        url: "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=" + keyword + "&prop=info&inprop=url&utf8=&format=json",
         dataType: "jsonp",
         success: function(response) {
             console.log(response.query);
@@ -33,7 +33,7 @@ function showResults(callback) {
         timestamp = new Date(timestamp);
         //"Wed Aug 27 2014 00:27:15 GMT+0100 (WAT)";
         console.log(timestamp);
-        $(".title-" + m).html("<a href='https://vi.wikipedia.org/wiki/" + url + "' target='_blank'>" + callback.query.search[m].title + "</a>");
+        $(".title-" + m).html("<a href='https://en.wikipedia.org/wiki/" + url + "' target='_blank'>" + callback.query.search[m].title + "</a>");
         $(".snippet-" + m).html(callback.query.search[m].snippet);
         $(".metadata-" + m).html((callback.query.search[m].size / 1000).toFixed(0) + "kb (" + callback.query.search[m].wordcount + " words) - " + timestamp);
     }
@@ -65,8 +65,7 @@ $(".btn-wiki").click(function(event) {
         $(".display-results").html("");
         ajax(keyword);
     } else {
-        alert("Cùng đến wikipedia nào!^^");
-        window.open("https://vi.wikipedia.org/wiki/Trang_Ch%C3%ADnh");
+        alert("Enter a keyword into the search box");
     }
 
 });
