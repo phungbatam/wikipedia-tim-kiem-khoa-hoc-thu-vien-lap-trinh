@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href='https://dl.dropboxusercontent.com/s/dcgtnlepsegtqxk/style.css' rel='stylesheet' />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://assets.website-files.com/6023c1ab453b66ef8af02699/6023c32ae978ee363726ea57_fav32.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://assets.website-files.com/6023c1ab453b66ef8af02699/6023c32c74616d61490c3211_fav256.png" rel="apple-touch-icon" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="responsive.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wikipedia | Super code</title>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://phungbatam.github.io">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <span title="Menu - Responsive" style="font-size:30px;cursor:pointer; color: aqua; margin: 10px;" onclick="openNav()">&#9776;</span>
+
+    <div class="main">
+        <div class="home">
+            <div class="container">
+                <div class="row">
+                    <div class="eight columns offset-by-two">
+                        <h1 class="headline" style="text-align: center;" id="Charlotte">Wikipedia</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="eight columns offset-by-two">
+                        <form action="" class="wiki-search-form">
+                            <input title="Tìm kiếm" target="_blank" type="search" placeholder="Search Wikipedia..." class="wiki-search-input" id="wiki-search-input">
+                            <button class="button btn btn-wiki">Wiki Search</button>
+                            <a class="button btn btn-lucky" href="http://vi.wikipedia.org/wiki/Special:Random" target="_blank">I'm Feeling Lucky</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="eight columns offset-by-two">
+                        <footer class="attribution">
+                            <p>Designed and coded by <a href="#">Ayo Isaiah</a></p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="result hidden">
+            <header class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="two-thirds column">
+                            <form action="" class="result-wiki-search-form">
+                                <input title="Tìm kiếm" targer="_blank" type="text" placeholder="Search Wikipedia..." class="result-wiki-search-form-input" id="result-wiki-search-form-input">
+                                <button class="btn result-btn-wiki">Wiki Search</button>
+                            </form>
+                        </div>
+                        <div class="one-third column">
+                            <h1>Wikipedia Search</h1>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container">
+                <section class="search-results">
+                    <div class="one-half column">
+                        <div class="display-results"></div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+    <article>
+        <footer>
+            <p>nocopyright © 2022 | Super code</p>
+        </footer>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
